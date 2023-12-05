@@ -16,11 +16,11 @@ class MyAppView extends StatelessWidget {
       title: 'Momentum App',
       theme: ThemeData(
         colorScheme: const ColorScheme.light(
-          background: Colors.white,
-          onBackground: Colors.black,
-          primary: Color.fromRGBO(206, 147, 216, 1),
-          onPrimary: Colors.black,
-          secondary: Color.fromRGBO(244, 143, 177, 1),
+          background: Color.fromARGB(52, 52, 52, 1),
+          onBackground: Colors.white,
+          primary: Color.fromRGBO(222, 181, 6, 1),
+          onPrimary: Colors.white,
+          secondary: Color.fromRGBO(248, 207, 28, 1),
           onSecondary: Colors.white,
           tertiary: Color.fromRGBO(255, 204, 128, 1),
           error: Colors.red,

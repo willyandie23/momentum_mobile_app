@@ -206,7 +206,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             SizedBox(height: MediaQuery.of(context).size.height * 0.02),
             !signUpRequired
                 ? SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.5,
+                    width: MediaQuery.of(context).size.width * 0.9,
                     child: TextButton(
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {

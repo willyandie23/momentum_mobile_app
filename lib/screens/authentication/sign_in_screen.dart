@@ -104,8 +104,12 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 20,
+            TextButton(
+              onPressed: () {},
+              child: const Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: Text("forgot password?"),
+              ),
             ),
             !signInRequired
                 ? SizedBox(

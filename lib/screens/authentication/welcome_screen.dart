@@ -43,12 +43,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
-                const Text(
-                  'Welcome Kawan !',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: kToolbarHeight,
+                Container(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.asset('assets/logo.png'),
                 ),
                 TabBar(
                   controller: tabController,
