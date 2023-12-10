@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            const Text("Welcome Nigga")
+            const Text("Welcome Bro"),
           ],
         ),
         actions: [
