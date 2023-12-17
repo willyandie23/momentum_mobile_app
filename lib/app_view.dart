@@ -4,9 +4,11 @@ import 'package:flutter_momentum_app/blocs/my_user_bloc/my_user_bloc.dart';
 import 'package:flutter_momentum_app/blocs/sign_in_bloc/sign_in_bloc.dart';
 import 'package:flutter_momentum_app/blocs/update_user_info_bloc/update_user_info_bloc.dart';
 import 'package:flutter_momentum_app/screens/authentication/welcome_screen.dart';
+import 'package:flutter_momentum_app/screens/home/home_screen.dart';
+// import 'package:flutter_momentum_app/screens/home/profile_screen.dart';
 
 import 'blocs/authentication_bloc/authentication_bloc.dart';
-import 'screens/home/home_screen.dart';
+// import 'screens/home/home_screen.dart';
 
 class MyAppView extends StatelessWidget {
   const MyAppView({super.key});

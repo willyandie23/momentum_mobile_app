@@ -95,7 +95,9 @@ class FirebaseUserRepository implements UserRepository {
       File imageFile = File(file);
       Reference firebaseStoreRef =
           FirebaseStorage.instance.ref().child('$userId/PP/${userId}_lead');
-      await firebaseStoreRef.putFile(imageFile);
+      await firebaseStoreRef.putFile(
+        imageFile,
+      );
       String url = await firebaseStoreRef.getDownloadURL();
       await userCollection.doc(userId).update({'picture': url});
       return url;
