@@ -1,4 +1,4 @@
-name: post_repository
+name: reservation_repository
 description: Dart Package Which Manage The Post
 publish_to: "none"
 version: 1.0.0+1
