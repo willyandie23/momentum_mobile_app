@@ -24,14 +24,11 @@ class _NavigationMenuState extends State<NavigationMenu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // extendBody: true,
-      backgroundColor: Theme.of(context).colorScheme.background,
       bottomNavigationBar: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(30),
           child: BottomNavigationBar(
-            selectedItemColor: Theme.of(context).colorScheme.primary,
+            backgroundColor: Colors.black,
+            selectedItemColor: Theme.of(context).colorScheme.secondary,
             unselectedItemColor: Colors.grey,
             currentIndex: myCurrentIndex,
             showUnselectedLabels: false,

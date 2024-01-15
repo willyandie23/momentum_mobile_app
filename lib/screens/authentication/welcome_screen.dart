@@ -36,19 +36,25 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
-      resizeToAvoidBottomInset: false, // Set this property to false
+      resizeToAvoidBottomInset: false,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(4.0),
+            width: 190,
+            height: 190,
             child: Image.asset('assets/logo.png'),
           ),
           TabBar(
             controller: tabController,
             unselectedLabelColor:
                 Theme.of(context).colorScheme.onBackground.withOpacity(0.5),
-            labelColor: Theme.of(context).colorScheme.onBackground,
+            // labelColor: Theme.of(context).colorScheme.onBackground,
+            indicator: const BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.transparent, width: 0.0)),
+            ),
             tabs: const [
               Padding(
                 padding: EdgeInsets.all(12.0),
