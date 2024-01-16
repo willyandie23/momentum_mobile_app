@@ -125,7 +125,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: TextField(
                           readOnly: true,
                           controller: TextEditingController(
-                            text: '${state.user!.name}',
+                            text: state.user!.name,
                           ),
                           decoration: InputDecoration(
                             filled: true,
@@ -146,7 +146,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: TextField(
                           readOnly: true,
                           controller: TextEditingController(
-                            text: '${state.user!.email}',
+                            text: state.user!.email,
                           ),
                           decoration: InputDecoration(
                             filled: true,
@@ -174,11 +174,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             padding: const EdgeInsets.all(16.0),
                             minimumSize: const Size(double.infinity, 0),
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(
-                                  20.0), // Adjust the radius as needed
+                              borderRadius: BorderRadius.circular(20.0),
                             ),
+                            backgroundColor: Theme.of(context)
+                                .colorScheme
+                                .primary, // Set background color
                           ),
-                          child: const Text('Sign Out'),
+                          child: const Text(
+                            'Sign Out',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ),
                       const SizedBox(

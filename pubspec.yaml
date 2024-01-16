@@ -37,12 +37,14 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.3
+  flutter_staggered_grid_view: ^0.7.0
+  transparent_image: ^2.0.1
   image_cropper: ^5.0.1
   image_picker: ^1.0.5
-  user_repository:
-    path: packages/user_repository
   reservation_repository:
     path: packages/reservation_repository
+  user_repository:
+    path: packages/user_repository
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -60,6 +62,17 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/memory/1.jpeg
+    - assets/memory/2.jpeg
+    - assets/memory/3.jpeg
+    - assets/memory/4.jpeg
+    - assets/memory/5.jpeg
+    - assets/memory/6.jpeg
+    - assets/memory/7.jpeg
+    - assets/memory/8.jpeg
+    - assets/memory/9.jpeg
+    - assets/memory/10.jpeg
+    - assets/memory/11.jpeg
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
